@@ -5,7 +5,7 @@ export const Content1 = () => {
           <div className="inline-flex items-center border border-[#222]/10 px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700">
             🚀 Beta Version is here
           </div>
-          <h1 className="text-6xl font-extrabold tracking-tighter bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-transparent leading-tight">
+          <h1 className="text-6xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] bg-clip-text text-transparent leading-tight">
             A powerful career platform
           </h1>
           <p className="text-xl text-[#010D3E] tracking-tight mt-4">
