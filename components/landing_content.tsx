@@ -1,6 +1,6 @@
 export const Content1 = () => {
     return (
-      <section className="container max-w-screen-xl mx-auto py-16 px-6 space-y-10">
+      <section className="container max-w-screen-xl mx-auto py-16 px-6 space-y-10 bg-white">
         <div className="space-y-6">
           <div className="inline-flex items-center border border-[#222]/10 px-4 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700">
             🚀 Beta Version is here

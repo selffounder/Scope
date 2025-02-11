@@ -2,7 +2,7 @@
 
 export const Demo = () => {
   return (
-    <section className="container max-w-screen-xl mx-auto px-6 py-24">
+    <section className="container max-w-screen-xl mx-auto px-6 py-24 bg-white">
       <div className="bg-gradient-to-r from-[#D2DCFF] via-white to-[#D2DCFF] p-16 rounded-3xl shadow-xl flex flex-col lg:flex-row items-center gap-16">
       
         <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
