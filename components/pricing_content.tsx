@@ -39,7 +39,7 @@ export const Pricing = () => {
       setFormData({ name: "", email: "" });
       setApplications(10);
     } catch (error) {
-      setFeedbackMessage("❌ An error occurred. Please try again.");
+            console.error("Error:", error);
     } finally {
       setIsSubmitting(false);
     }
