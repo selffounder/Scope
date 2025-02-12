@@ -1,17 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, User, Building, Loader2 } from "lucide-react"; 
+import { Mail, User, Building, Loader2 } from "lucide-react";
+
+interface FormData {
+  name: string;
+  email: string;
+  institution: string;
+  phone?: string;
+}
 
 export default function SignUp() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     institution: "",
     phone: "",
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [feedbackMessage, setFeedbackMessage] = useState<string>("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -38,9 +46,13 @@ export default function SignUp() {
 
       setFormData({ name: "", email: "", institution: "", phone: "" });
       setFeedbackMessage("✅ Form submitted successfully!");
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("Error:", error);
-      setFeedbackMessage("❌ " + error.message);
+      if (error instanceof Error) {
+        setFeedbackMessage(`❌ ${error.message}`);
+      } else {
+        setFeedbackMessage("❌ An unknown error occurred.");
+      }
     } finally {
       setIsSubmitting(false);
     }
@@ -113,7 +125,7 @@ export default function SignUp() {
             } flex items-center justify-center`}
             disabled={isSubmitting}
           >
-            {isSubmitting ? <Loader2 className="animate-spin mr-2" /> : null}
+            {isSubmitting && <Loader2 className="animate-spin mr-2" />}
             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
         </form>
@@ -121,7 +133,9 @@ export default function SignUp() {
         {feedbackMessage && (
           <div
             className={`mt-6 p-4 rounded-lg text-center text-lg ${
-              feedbackMessage.startsWith("✅") ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+              feedbackMessage.startsWith("✅")
+                ? "bg-green-100 text-green-700"
+                : "bg-red-100 text-red-700"
             }`}
           >
             {feedbackMessage}
