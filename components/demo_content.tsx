@@ -1,8 +1,9 @@
-
+"use client"
+import {motion} from "framer-motion";
 
 export const Demo = () => {
   return (
-    <section className="container max-w-screen-xl mx-auto px-6 py-24 bg-white">
+    <section className="container max-w-screen-xl mx-auto px-6 py-24">
       <div className="bg-gradient-to-r from-[#D2DCFF] via-white to-[#D2DCFF] p-16 rounded-3xl shadow-xl flex flex-col lg:flex-row items-center gap-16">
       
         <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
@@ -16,9 +17,14 @@ export const Demo = () => {
             Our AI-powered platform helps you get career guidance, build a standout CV, and apply for top jobs effortlessly.
           </p>
           <div className="flex justify-center lg:justify-start gap-6 mt-8">
-            <button className="bg-black text-white px-10 py-4 rounded-xl text-lg font-medium hover:bg-gray-800 transition-transform transform hover:scale-105">
-              Request the Demo
-            </button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-black text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all shadow-lg"
+            onClick={() => window.open("/signup", "_blank")}
+          >
+            Request Demo 
+          </motion.button>
             <button className="bg-gray-200 text-black px-10 py-4 rounded-xl text-lg font-medium hover:bg-gray-300 transition-transform transform hover:scale-105">
               Learn More
             </button>

@@ -1,3 +1,6 @@
+"use client"
+import {motion} from "framer-motion";
+
 export const Content1 = () => {
     return (
       <section className="container max-w-screen-xl mx-auto py-16 px-6 space-y-10 bg-white">
@@ -14,9 +17,14 @@ export const Content1 = () => {
           </p>
         </div>
         <div className="flex items-center gap-4 mt-8">
-          <button className="rounded-lg bg-black text-white px-6 py-4 font-medium hover:bg-gray-800 transition-all">
-            Get Started
-          </button>
+        <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-black text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-gray-800 transition-all shadow-lg"
+            onClick={() => window.open("/signup", "_blank")}
+          >
+            🚀 Get Started for Free
+          </motion.button>
           <button className="rounded-lg border border-black text-black px-6 py-4 font-medium hover:bg-black hover:text-white transition-all">
             Learn More
           </button>
