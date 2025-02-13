@@ -14,7 +14,7 @@ const childVariants = {
 export const Demo = () => {
   return (
     <motion.section
-      className="relative container max-w-screen-xl mx-auto px-6 py-32 bg-gradient-to-b from-black to-gray-900 rounded-3xl overflow-hidden"
+      className="relative container max-w-screen-xl mx-auto py-45 bg-gradient-to-b from-black to-gray-900 rounded-3xl overflow-hidden"
       initial="hidden"
       animate="visible"
       variants={containerVariants}

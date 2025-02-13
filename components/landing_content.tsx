@@ -14,7 +14,7 @@ const childVariants = {
 
 export const Content1 = () => {
   return (
-    <section className=" py-24">
+    <section className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
       <motion.div
         className="container max-w-screen-xl mx-auto bg-[#1c1f26] text-gray-100 rounded-3xl shadow-2xl py-16 px-10 space-y-10"
         initial="hidden"
