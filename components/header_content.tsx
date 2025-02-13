@@ -15,7 +15,7 @@ export const Header = () => {
 
   return (
     <header className="sticky top-0 bg-black text-white shadow-lg z-50">
-      {/* Announcement Bar */}
+      
       <div className="flex justify-center items-center py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-sm font-medium">
         <p className="flex items-center gap-2">
           <a href="#" className="hover:underline">🚀 Sign up for beta testing!</a>
@@ -30,16 +30,16 @@ export const Header = () => {
         </p>
       </div>
 
-      {/* Main Header */}
+      
       <div className="py-4">
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="flex items-center justify-between">
-            {/* Logo */}
+            
             <a href="#">
               <Image src={Logo} alt="Scope AI Logo" height={60} width={60} className="rounded-full" />
             </a>
 
-            {/* Desktop Navigation */}
+            
             <nav className="hidden md:flex gap-8 items-center">
               {["About", "Features", "Pricing", "Contact"].map((item) => (
                 <a
@@ -58,7 +58,6 @@ export const Header = () => {
               </motion.button>
             </nav>
 
-            {/* Mobile Menu Button */}
             <button className="md:hidden flex items-center focus:outline-none" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6 text-gray-300" />
@@ -70,7 +69,6 @@ export const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <motion.div
         initial={{ height: 0 }}
         animate={{ height: isMobileMenuOpen ? "auto" : 0 }}
