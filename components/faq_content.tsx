@@ -7,22 +7,22 @@ import { ChevronDown, HelpCircle, Info, Star } from "lucide-react";
 const faqs = [
   {
     question: "How much do I pay?",
-    answer: "Pricing depends on the plan you choose. We offer multiple tiers to suit your needs.",
+    answer: "You pay nothing right now:)",
     icon: <Star size={20} />,
   },
   {
-    question: "How does Scope AI provide real-time suggestions?",
-    answer: "Our AI engine analyzes data in real-time to offer actionable suggestions tailored to your profile.",
+    question: "What are the functions of Scope AI?",
+    answer: "Our AI offers accurate career consultations, making a standout CV, and helping you with getting your dream acceptance.",
     icon: <Info size={20} />,
   },
   {
-    question: "Is Scope AI completely open-source?",
-    answer: "No, Scope AI is a closed-source platform, but we offer API integrations.",
+    question: "How can I help Scope AI?",
+    answer: "You can assist development of the Scope AI by requesting our demo.",
     icon: <HelpCircle size={20} />,
   },
   {
     question: "I have another question",
-    answer: "Feel free to contact our support team for additional inquiries.",
+    answer: "Feel free to contact Scope AI team!",
     icon: <HelpCircle size={20} />,
   },
 ];

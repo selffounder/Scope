@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Icon library
+import { Github, Twitter, Instagram, Linkedin  } from "lucide-react"; // Icon library
 
 export const Footer: React.FC = () => {
   return (
@@ -16,12 +16,12 @@ export const Footer: React.FC = () => {
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">About Scope AI</h2>
           <p className="text-gray-400">
-            Scope AI is designed to help you achieve long-term career success. Our AI-driven tools empower you to stand out in your career journey.
+           Scope AI helps future specialists to discover new fields, craft strong resumes, and apply to job positions. We are on the mission to make career guidance affordable!
           </p>
         </div>
 
         <div className="space-y-4">
-          <h2 className="text-2xl font-bold">Quick Links</h2>
+          <h2 className="text-2xl font-bold">Links</h2>
           <nav className="space-y-2">
             <a href="#" className="block text-gray-400 hover:text-white transition-colors">Home</a>
             <a href="#" className="block text-gray-400 hover:text-white transition-colors">Features</a>
@@ -34,7 +34,7 @@ export const Footer: React.FC = () => {
           <h2 className="text-2xl font-bold">Connect with Us</h2>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-blue-400 transition-colors">
-              <Facebook size={24} />
+              <Github size={24} />
             </a>
             <a href="#" className="hover:text-blue-400 transition-colors">
               <Twitter size={24} />
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
               <Linkedin size={24} />
             </a>
           </div>
-          <p className="text-sm text-gray-500">Email: contact@scopeai.com</p>
+          <p className="text-sm text-gray-500">Email: webuildscope@icloud.com</p>
         </div>
       </motion.div>
 

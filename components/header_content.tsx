@@ -14,7 +14,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 bg-black text-white shadow-lg z-50">
+    <header className="sticky top-0 bg-black text-white shadow-lg z-50 ">
       
       <div className="flex justify-center items-center py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-sm font-medium">
         <p className="flex items-center gap-2">

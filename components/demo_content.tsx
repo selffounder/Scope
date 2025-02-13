@@ -30,13 +30,13 @@ export const Demo = () => {
       >
         <motion.div className="lg:w-1/2 space-y-8 text-center lg:text-left" variants={childVariants}>
           <h1 className="text-6xl font-bold tracking-tight text-white leading-tight">
-            Start Your Dream Career!
+            How It Works?
           </h1>
           <h2 className="text-3xl font-semibold text-gray-300">
-            The most effective way to begin your journey
+            Scope AI helps you transform your career
           </h2>
           <p className="text-lg text-gray-400 max-w-lg mx-auto lg:mx-0">
-            Our AI-powered platform helps you get career guidance, build a standout CV, and apply for top jobs effortlessly.
+            By helping you deciding on your career, writing a stellar and customized resume, and preparing your for the application
           </p>
           <div className="flex justify-center lg:justify-start gap-6 mt-8">
             <motion.button
