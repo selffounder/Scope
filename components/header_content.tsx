@@ -18,7 +18,7 @@ export const Header = () => {
       
       <div className="flex justify-center items-center py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-sm font-medium">
         <p className="flex items-center gap-2">
-          <a href="#" className="hover:underline">🚀 Sign up for beta testing!</a>
+          <a href="/signup" className="hover:underline">🚀 Sign up for beta testing!</a>
           <motion.svg
             className="h-4 w-4 animate-bounce"
             fill="currentColor"
@@ -53,6 +53,7 @@ export const Header = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
+                onClick={() => window.open("/signup", "_blank")}
               >
                 Get Started
               </motion.button>
