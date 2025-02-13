@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Scope AI",
-  description: "Your Personal Career Counselor",
+  description: "Your Personal AI Career Counselor",
 };
 
 export default function RootLayout({
