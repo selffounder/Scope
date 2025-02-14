@@ -57,7 +57,8 @@ export default function Login() {
             Login
           </button>
         </form>
-        {message && <p className="mt-4 text-center">{message}</p>}
+        {message && <p className="mt-4 text-center">{message.replace(/'/g, "&#39;")}</p>}
+
       </motion.div>
     </section>
     <Footer />
