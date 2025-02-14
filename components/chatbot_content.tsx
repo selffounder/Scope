@@ -34,11 +34,11 @@ export const AI_Content = () => {
   return (
     <section className="min-h-screen bg-black text-white flex items-center justify-center py-16 px-6">
       <div className="max-w-2xl w-full bg-gray-800 p-8 rounded-lg shadow-lg">
-        <h1 className="text-4xl font-extrabold mb-6">Ask Gemini AI</h1>
+        <h1 className="text-4xl font-extrabold mb-6">Ask Scope AI</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="inputText" className="block text-lg font-medium mb-2">
-              Enter your prompt
+              Enter your question
             </label>
             <textarea
               id="inputText"
@@ -46,7 +46,7 @@ export const AI_Content = () => {
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               className="w-full h-32 px-4 py-3 rounded-lg bg-gray-900 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Type your question or prompt for the Gemini API..."
+              placeholder="Type your question..."
               required
             />
           </div>

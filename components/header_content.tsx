@@ -18,7 +18,7 @@ export const Header = () => {
       
       <div className="flex justify-center items-center py-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-sm font-medium">
         <p className="flex items-center gap-2">
-          <a href="/signup" className="hover:underline">🚀 Sign up for beta testing!</a>
+          <a href="/register" className="hover:underline">🚀 Sign up for beta testing!</a>
           <motion.svg
             className="h-4 w-4 animate-bounce"
             fill="currentColor"
@@ -35,7 +35,7 @@ export const Header = () => {
         <div className="max-w-screen-xl mx-auto px-6">
           <div className="flex items-center justify-between">
             
-            <a href="#">
+            <a href="https://scopeai.vercel.app">
               <Image src={Logo} alt="Scope AI Logo" height={60} width={60} className="rounded-full" />
             </a>
 
@@ -44,7 +44,7 @@ export const Header = () => {
               {["About", "Features", "Pricing", "Contact"].map((item) => (
                 <a
                   key={item}
-                  href="#"
+                  href="/signup"
                   className="text-sm font-medium text-gray-300 hover:text-white transition-colors"
                 >
                   {item}
@@ -53,7 +53,7 @@ export const Header = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-2 rounded-lg font-medium transition-all shadow-md hover:shadow-lg"
-                onClick={() => window.open("/signup", "_blank")}
+                onClick={() => window.open("/register", "_blank")}
               >
                 Get Started
               </motion.button>
