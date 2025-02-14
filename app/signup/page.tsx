@@ -1,7 +1,8 @@
 "use client";
-
+import {Header} from "@/components/header_content";
 import { useState } from "react";
 import { Mail, User, Building, Loader2 } from "lucide-react";
+import {Footer} from "@/components/footer_content"
 
 interface FormData {
   name: string;
@@ -59,6 +60,8 @@ export default function SignUp() {
   };
 
   return (
+    <>
+    <Header />
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-100 to-gray-300 py-16">
       <div className="bg-white shadow-2xl rounded-3xl p-10 max-w-2xl w-full">
         <h1 className="text-4xl font-black text-center text-black mb-8">Sign Up</h1>
@@ -142,5 +145,7 @@ export default function SignUp() {
         )}
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
