@@ -29,10 +29,14 @@ export default function Login() {
       if (!res.ok) throw new Error(result.error || "Login failed.");
 
       setMessage("🎉 Login successful!");
-    } catch (error: any) {
-      setMessage(`❌ ${error.message}`);
+    }catch (error) {
+        if (error instanceof Error) {
+          setMessage(`❌ ${error.message}`);
+        } else {
+          setMessage("❌ An unexpected error occurred.");
+        }
+      }
     }
-  };
 
   return (
     <>

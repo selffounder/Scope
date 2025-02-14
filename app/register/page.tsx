@@ -30,10 +30,15 @@ export default function Register() {
 
       setMessage("🎉 Registration successful! Please log in.");
       setFormData({ fullName: "", email: "", password: "", institution: "" });
-    } catch (error: any) {
-      setMessage(`❌ ${error.message}`);
+    } catch (error) {
+        if (error instanceof Error) {
+          setMessage(`❌ ${error.message}`);
+        } else {
+          setMessage("❌ An unexpected error occurred.");
+        }
+      }
     }
-  };
+
 
   return (
     <>
