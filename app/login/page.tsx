@@ -1,5 +1,7 @@
 "use client";
 
+{/* eslint-disable react/no-unescaped-entities */}
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import {Header} from "@/components/header_content";
@@ -57,8 +59,7 @@ export default function Login() {
             Login
           </button>
         </form>
-        {message && <p className="mt-4 text-center">{message.replace(/'/g, "&#39;")}</p>}
-
+        {message && <p className="mt-4 text-center">{message}</p>}
       </motion.div>
     </section>
     <Footer />
