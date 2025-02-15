@@ -50,7 +50,7 @@ export default function Login() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <a href="/register" className="hover:underline">If you don't have an account, register!</a>
+        <a href="/register" className="hover:underline">If you don't have an account, register now!</a>
         <h1 className="text-4xl font-bold mb-6">Login</h1>
         <form onSubmit={handleLogin} className="space-y-6">
           <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} className="w-full px-4 py-3 bg-gray-700 rounded-lg focus:outline-none" required />
