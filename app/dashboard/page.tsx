@@ -12,7 +12,6 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  // Check if the user is logged in
   useEffect(() => {
     const checkAuth = async () => {
       try {
@@ -22,7 +21,7 @@ export default function Dashboard() {
         const data = await res.json();
         setUser({ fullName: data.fullName, institution: data.institution || "No institution provided" });
       } catch (error) {
-        router.push("/login"); // Redirect to login if not authenticated
+        router.push("/login"); 
       } finally {
         setLoading(false);
       }
@@ -61,13 +60,11 @@ export default function Dashboard() {
         <div className="container max-w-screen-xl mx-auto">
           <h1 className="text-5xl font-bold mb-6 text-center">Your Career Dashboard</h1>
 
-          {/* Display User Information */}
           <div className="text-center mb-8">
             <p className="text-lg">👤 <strong>Name:</strong> {user?.fullName}</p>
             <p className="text-lg">🏛 <strong>Institution:</strong> {user?.institution}</p>
           </div>
 
-          {/* Navigation Tabs */}
           <div className="flex justify-center gap-6 mb-12">
             {["Career Orientation", "Resume Builder", "Ongoing Applications", "New Job Application"].map((tab) => (
               <button
@@ -128,7 +125,6 @@ const OngoingApplications = () => (
   </div>
 );
 
-// NEW JOB APPLICATION FORM
 const NewJobApplication = () => {
   const [formData, setFormData] = useState({ jobTitle: "", company: "", description: "" });
   const [message, setMessage] = useState("");
